@@ -13,11 +13,12 @@ const DashboardPage = async() => {
   }
   return (
     <main className='max-w-lg mx-auto py-10'>
-      <SignedIn>
-        <UserButton afterSignOutUrl='/' />
-      </SignedIn>
-      <h1 className='text-2xl font-bold mb-6'>My Todos</h1>
-      <TodoInput/>
+      <div className='flex items-center justify-between mb-10'>
+        <h1 className='text-2xl font-bold mb-6'>My Todos</h1>
+        <SignedIn>
+          <UserButton afterSignOutUrl='/' />
+        </SignedIn>
+      </div>
       <TodoList/>
     </main>
   )
